@@ -15,16 +15,14 @@ import {upload} from '../middlewares/multer.middlewares.js'; // import multer mi
 
 const router = Router(); // create router instance
 
-router.route('/register') //  define the route
-    .post(
-        
+router.route('/register').post(
         upload.fields([
             {
                 name: 'avatar', // field name for avatar
                 maxCount: 1 // limit to one file for avatar
             },
             {
-                name: 'coverImages', // field name for images
+                name: 'coverImage', // field name for images
                 maxCount: 1 // limit to five files for images
             },
             {}

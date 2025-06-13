@@ -16,7 +16,8 @@ cloudinary.config({
         })
         // Wait for the upload to complete
         //file has been uploaded to cloudinary
-        console.log("File uploaded successfully to Cloudinary.", response.url); 
+       
+        fs.unlinkSync(localfilepath); // Delete the local file after upload
         return response; // Return the URL of the uploaded file
     } catch (error) { 
         fs.unlinkSync(localfilepath); // Delete the local file if upload fails
