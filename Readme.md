@@ -106,7 +106,7 @@ All errors follow this format:
 ## License
 MIT
 
-Consider adding "Response codes"
+####Consider adding "Response codes"
 For each route, it's helpful to clarify when a 400, 401, or 404 might be returned.
 For example:
 
