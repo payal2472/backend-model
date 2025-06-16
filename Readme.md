@@ -4,44 +4,6 @@ A secure, JWT-authenticated REST API for user management and todo tracking, buil
 
 ---
 
-## Features
-- User registration, login, and logout
-- Secure JWT authentication (access & refresh tokens via HTTP-only cookies)
-- CRUD operations for todos (create, read, update, delete)
-- Password hashing with bcrypt
-- CORS and cookie security best practices
-
----
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v16+ recommended)
-- MongoDB instance
-
-### Installation
-```bash
-npm install
-```
-
-### Environment Variables
-Create a `.env` file in the root directory with the following variables:
-```
-PORT=8000
-MONGODB_URI=your_mongodb_connection_string
-CLIENT_URL=http://localhost:3000
-ACCESS_TOKEN_SECRET=your_access_token_secret
-ACCESS_TOKEN_EXPIRY=15m
-REFRESH_TOKEN_SECRET=your_refresh_token_secret
-REFRESH_TOKEN_EXPIRY=7d
-```
-
-### Running the Server
-```bash
-npm start
-```
-
----
 
 ## API Documentation
 
