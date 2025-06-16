@@ -106,19 +106,3 @@ All errors follow this format:
 ## License
 MIT
 
-Add a "Models" Section (optional but helpful)
-It lets readers know the structure of your User and Todo documents at a high level:
-
-markdown
-Copy
-Edit
-## Models
-
-### User
-```json
-{
-  "id": "string",
-  "fullName": "string",
-  "username": "string",
-  "email": "string"
-}
