@@ -1,33 +1,13 @@
-//  import { Router } from 'express';
-//  import { registerUser } from '../controllers/user.controller.js'; 
-
-//  const router = Router();
-
-//  Router.route('/register')
-//      .post(registerUser);
- 
-//  export default Router;
-
-// routes/user.routes.js
 import { Router } from 'express';
-import { registerUser } from '../controllers/user.controllers.js';
-import {upload} from '../middlewares/multer.middlewares.js'; // import multer middleware if needed
+import { registerUser, loginUser, logoutUser } from '../controllers/user.controllers.js';
+import { verifyJWT } from '../middlewares/auth.middleware.js';
 
-const router = Router(); // create router instance
+const router = Router(); 
 
-router.route('/register').post(
-        upload.fields([
-            {
-                name: 'avatar', // field name for avatar
-                maxCount: 1 // limit to one file for avatar
-            },
-            {
-                name: 'coverImage', // field name for images
-                maxCount: 1 // limit to five files for images
-            },
-            {}
-        ]), // use multer middleware for file uploads
-        registerUser);  // bind controller
+router.route('/register').post(registerUser);  
+router.route('/login').post(loginUser);
+router.route('/logout').post(verifyJWT, logoutUser);
 
-export default router;    // export the instance
+
+export default router;    
 

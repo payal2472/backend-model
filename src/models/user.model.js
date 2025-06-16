@@ -26,26 +26,12 @@ const userSchema = new Schema({
         trim: true,
         index: true,
     },
-    avatar:{
-        type: String,
-        required: true,
-    },
-    coverImage:{
-        type: String,
-    },
-    watchHistroy:[
-         {
-            type: Schema.Types.ObjectId,
-            ref:"video"
-         }
-    ],
     password:{
         type: String,
         required: [true, "Password is required"],
     },
-    referehToken:{
+    refreshToken:{
         type: String,
-        
     },
 },{timestamps: true})
 
