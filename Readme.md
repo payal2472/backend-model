@@ -106,15 +106,3 @@ All errors follow this format:
 ## License
 MIT
 
-####Consider adding "Response codes"
-For each route, it's helpful to clarify when a 400, 401, or 404 might be returned.
-For example:
-
-markdown
-Copy
-Edit
-#### Update Todo
-- **200 OK:** todo updated successfully
-- **400 Bad Request:** invalid data
-- **401 Unauthorized:** invalid or missing JWT
-- **404 Not Found:** todo not found
