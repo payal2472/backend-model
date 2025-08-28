@@ -7,6 +7,7 @@ const useRegister = () => {
   const register = async (fullName, username, email, password) => {
     setLoading(true);
     setError(null);
+    console.log("2")
     try {
       const response = await fetch('/api/v1/users/register', {
         method: 'POST',

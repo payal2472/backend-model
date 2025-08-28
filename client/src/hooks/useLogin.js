@@ -7,6 +7,8 @@ const useLogin = () => {
   const login = async (email, password) => {
     setLoading(true);
     setError(null);
+
+    console.log(email, password)
     try {
       const response = await fetch('/api/v1/users/login', {
         method: 'POST',
