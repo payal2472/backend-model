@@ -1,9 +1,91 @@
-# Todo Backend API
+# Todo App
 
-A secure, JWT-authenticated REST API for user management and todo tracking, built with Node.js, Express, and MongoDB.
+A full-stack MERN application for managing your daily tasks. This project features a React frontend and a Node.js/Express backend with JWT authentication.
 
 ---
 
+## Features
+
+- User registration and login with JWT authentication
+- Create, Read, Update, and Delete (CRUD) functionality for todos
+- A responsive and user-friendly interface
+
+---
+
+## Technologies Used
+
+- **Frontend:** React, Vite
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB with Mongoose
+- **Authentication:** JSON Web Tokens (JWT)
+
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/en/) (v14 or later)
+- [npm](https://www.npmjs.com/)
+- [MongoDB](https://www.mongodb.com/try/download/community)
+
+---
+
+## Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+    cd your-repo-name
+    ```
+
+2.  **Install backend dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Install frontend dependencies:**
+
+    ```bash
+    cd client
+    npm install
+    cd ..
+    ```
+
+4.  **Create a `.env` file in the root directory and add the following environment variables:**
+
+    ```env
+    PORT=8000
+    MONGODB_URI=your_mongodb_connection_string
+    CORS_ORIGIN=http://localhost:3000
+    ACCESS_TOKEN_SECRET=your_access_token_secret
+    ACCESS_TOKEN_EXPIRY=1d
+    REFRESH_TOKEN_SECRET=your_refresh_token_secret
+    REFRESH_TOKEN_EXPIRY=10d
+    ```
+
+---
+
+## Running the Application
+
+1.  **Start the backend server:**
+
+    ```bash
+    npm run dev
+    ```
+
+2.  **Start the frontend development server:**
+
+    ```bash
+    cd client
+    npm run dev
+    ```
+
+The application will be available at `http://localhost:3000`.
+
+---
 
 ## API Documentation
 
@@ -105,4 +187,3 @@ All errors follow this format:
 
 ## License
 MIT
-
