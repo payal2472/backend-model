@@ -56,17 +56,9 @@ Before you begin, ensure you have the following installed:
 
 4.  **Create a `.env` file in the root directory and add the following environment variables:**
 
-    ```env
-    PORT=8000
-    MONGODB_URI=your_mongodb_connection_string
-    CORS_ORIGIN=http://localhost:3000
-    ACCESS_TOKEN_SECRET=your_access_token_secret
-    ACCESS_TOKEN_EXPIRY=1d
-    REFRESH_TOKEN_SECRET=your_refresh_token_secret
-    REFRESH_TOKEN_EXPIRY=10d
-    ```
+   
 
----
+
 
 ## Running the Application
 
